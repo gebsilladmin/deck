@@ -1,0 +1,55 @@
+{
+  "scene_sha256": "10f432c34077109feb2a4a8cafb9bf207d37dbaa80a2b9df966d8b1b1820bf14",
+  "bytes": 82625151,
+  "representation": "photographic",
+  "raw_to_world": [
+    -1.0544662305167292,
+    -0.039042066243886044,
+    -0.17027440715887368,
+    -0.04688758940107301,
+    0.010887607473672357,
+    -1.0544662305167292,
+    0.17435342461046507,
+    1.6486123329277629,
+    -0.17435342461046507,
+    0.17027440715887368,
+    1.0406844851170574,
+    -0.4585610497033964,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "application": "THREE.Matrix4.fromArray(raw_to_world).transpose() exactly as original Viewer.tsx",
+  "splat_rendering": {
+    "version": 1,
+    "training_filter": "brush_classic",
+    "covariance_px2": 0.3,
+    "reference_focal_px": 500.85539134152555,
+    "reference_max_resolution": 1000,
+    "resolution_aware": true
+  },
+  "camera": {
+    "name": "Walking start",
+    "position": [
+      0.22500000000000142,
+      1.62,
+      4.2749999999999995
+    ],
+    "target": [
+      0.3106750702700199,
+      1.6736865606402658,
+      3.2109538433362466
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "source_photographs": 70,
+  "source_url": "https://huggingface.co/datasets/heig-vd-geo/scop-datasets",
+  "license": "CC BY 4.0",
+  "limitations": "Includes inferred appearance; estimated scale; no collision engine in deck preview.",
+  "source_artifact": "MemorX local MVP photographic reconstruction export"
+}

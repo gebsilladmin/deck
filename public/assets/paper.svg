@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="320" viewBox="0 0 360 320" fill="none">
+  <g stroke="#5b735e" stroke-opacity=".15" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(26 27) rotate(-12)">
+      <path d="M2 10h19v7a7 7 0 0 1-7 7H9a7 7 0 0 1-7-7Zm19 2h2a4 4 0 0 1 0 8h-3M0 27h24M7 6c-3-3 2-4 0-7m7 7c-3-3 2-4 0-7"/>
+    </g>
+    <g transform="translate(145 22) rotate(14)">
+      <path d="M2 8 27 1l-8 24-6-9-11-8Zm11 8L27 1m-14 15-2 7 4-4"/>
+    </g>
+    <g transform="translate(257 32) rotate(-8)">
+      <path d="M3 23c4-1 9-6 12-10m-6 5C2 18 0 13 1 9c6 1 10 4 8 9Zm4-5c0-7 4-10 11-11 0 7-4 11-11 11Z"/>
+    </g>
+    <g transform="translate(81 83) rotate(-9)">
+      <rect x="1" y="2" width="28" height="19" rx="2"/><path d="m2 4 12 9 13-9M2 20l8-8m18 8-8-8"/>
+    </g>
+    <g transform="translate(197 93) rotate(10)">
+      <path d="M1 5c5-3 9-3 14 0 5-3 9-3 14 0v19c-6-3-10-3-14 0-5-3-10-3-14 0V5Zm14 0v19m-10-13c2-1 4-1 6 0m8 5c2-1 4-1 6 0"/>
+    </g>
+    <g transform="translate(309 111) rotate(-10)">
+      <path d="M1 16v-4a11 11 0 0 1 22 0v4M1 13h4v10H1a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2Zm22 0h-4v10h4a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2Z"/>
+    </g>
+    <g transform="translate(21 173) rotate(8)">
+      <path d="M1 20 11 5l6 9 5-7 9 13H1Zm6-9 4 1 3-2"/>
+      <circle cx="23" cy="1" r="3"/>
+    </g>
+    <g transform="translate(136 174) rotate(-14)">
+      <path d="M5 6h6l2-4h8l2 4h4a3 3 0 0 1 3 3v14H2V9a3 3 0 0 1 3-3Z"/><circle cx="16" cy="15" r="5"/><path d="M5 10h4"/>
+    </g>
+    <g transform="translate(244 174) rotate(13)">
+      <path d="M15 1c-7 2-9 11-4 16s11 4 15-2c-1 8-10 13-17 8C2 18 2 7 9 3c2-1 4-2 6-2Z"/>
+    </g>
+    <g transform="translate(75 259) rotate(12)">
+      <path d="M1 3h22a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3h-9l-6 5v-5H5a3 3 0 0 1-3-3V3ZM7 10h13m-13 5h8"/>
+    </g>
+    <g transform="translate(197 257) rotate(-16)">
+      <path d="M0 21 4 11 18 0l6 7L10 19 0 21Zm4-10 6 8m5-17 6 7"/>
+    </g>
+    <g transform="translate(308 260) rotate(10)">
+      <path d="M2 19h25m-21 0a9 9 0 0 1 18 0m-9-13V2m-9 8-3-3m22 3 3-3M7 24h14"/>
+    </g>
+    <path d="M99 27h5m-2.5-2.5v5m228 35h5m-2.5-2.5v5M64 126h4m-2-2v4m118 79h5m-2.5-2.5v5m88 68h4m-2-2v4M28 291h5m-2.5-2.5v5"/>
+    <circle cx="181" cy="57" r="1.5"/><circle cx="129" cy="120" r="1.2"/>
+    <circle cx="100" cy="205" r="1.4"/><circle cx="282" cy="228" r="1.5"/>
+    <circle cx="347" cy="201" r="1.2"/><circle cx="147" cy="287" r="1.4"/>
+  </g>
+</svg>

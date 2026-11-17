@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#F4F1E8">
+  <title>AVA &amp; MemorX | Investor presentations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#stage">Skip to presentation</a>
+  <header class="deck-header">
+    <a class="brand" href="?product=ava" aria-label="AVA presentation"><img id="brand-logo" src="assets/ava-logo.png" alt="AVA"></a>
+    <div class="settings">
+      <button id="settings-toggle" class="settings-toggle" aria-label="Presentation settings" aria-expanded="false" aria-controls="settings-menu" title="Presentation settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.2 3-.6 2.1-1.9 1.1-2.1-.5-2.8 4.7 1.6 1.6v2.2l-1.6 1.6 2.8 4.7 2.1-.5 1.9 1.1.6 2.1h5.6l.6-2.1 1.9-1.1 2.1.5 2.8-4.7-1.6-1.6V12l1.6-1.6-2.8-4.7-2.1.5-1.9-1.1-.6-2.1Z" transform="translate(1 -1) scale(.92)"/><circle cx="12" cy="12" r="3.2"/></svg>
+      </button>
+      <nav id="settings-menu" class="settings-menu" aria-label="Presentation settings" hidden>
+        <a data-product="ava" href="?product=ava">AVA</a>
+        <a data-product="memorx" href="?product=memorx">MemorX</a>
+        <button id="sources-toggle">Evidence</button>
+        <button id="fullscreen">Fullscreen</button>
+      </nav>
+    </div>
+  </header>
+  <main id="stage" tabindex="-1" aria-label="Investor presentation"></main>
+  <dialog id="sources" aria-labelledby="evidence-title">
+    <div class="dialog-top"><h2 id="evidence-title">Evidence</h2><button id="sources-close" aria-label="Close evidence">Close</button></div>
+    <div id="sources-list"></div>
+  </dialog>
+  <footer class="deck-footer">
+    <div class="chapter"><span id="slide-count"></span><span id="chapter-name"></span></div>
+    <div class="progress" id="progress" aria-label="Choose slide"></div>
+    <div class="slide-controls">
+      <button id="previous" aria-label="Previous slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
+      <button id="next" aria-label="Next slide"><span>Next</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button>
+    </div>
+  </footer>
+  <script src="content.js"></script><script src="config.js"></script><script src="app.js"></script>
+</body>
+</html>

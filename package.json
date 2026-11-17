@@ -1,0 +1,15 @@
+{
+  "name": "gebsill-investor-decks",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AVA and MemorX investor presentation website",
+  "scripts": {
+    "rebuild:room": "esbuild src/room.js --bundle --format=iife --minify --outfile=public/room.js",
+    "preview": "python3 -m http.server 8773 --directory public"
+  },
+  "devDependencies": {
+    "@sparkjsdev/spark": "2.4.0",
+    "esbuild": "0.28.2",
+    "three": "0.187.0"
+  }
+}

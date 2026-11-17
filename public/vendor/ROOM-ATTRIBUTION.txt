@@ -1,0 +1,13 @@
+Classroom source: HEIG-VD, Geomatics group (2026), Photogrammetry and LiDAR datasets.
+https://huggingface.co/datasets/heig-vd-geo/scop-datasets
+License: Creative Commons Attribution 4.0 International.
+https://creativecommons.org/licenses/by/4.0/
+
+MemorX used 70 selected source photographs. Reconstruction and selected-view
+refinement by MemorX. Includes inferred appearance. Estimated scale, not for
+measurement. The website deck displays the actual local MVP Gaussian-splat
+scene, with the same aligned camera frame and Brush-classic photographic filter.
+
+Original classroom photograph is unchanged from the source capture.
+Three.js v0.187.0 and Spark v2.4.0 are bundled in room.js under MIT licenses,
+copied alongside. Spark worker/decoder code is embedded in the local bundle.
