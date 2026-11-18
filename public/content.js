@@ -60,7 +60,7 @@ window.DECKS = {
       {
         "type": "hero",
         "title": "Some comfort sounds familiar.",
-        "body": "An AI companion shaped by shared context and familiar language to give the same comfort as your favorite companion.",
+        "body": "An AI companion shaped by shared context and familiar language to give the same comfort as your favorite person.",
         "tagline": "Your Favorite Companion",
         "cta": "Experience AVA",
         "status": "Working MVP",
@@ -94,10 +94,10 @@ window.DECKS = {
       {
         "type": "experience",
         "title": "A conversation you recognize.",
-        "body": "Try the demo sample and see how familiar context changes the exchange.",
-        "demoLabel": "Demo sample",
+        "body": "Try the MVP sample and see how familiar context changes the exchange.",
+        "demoLabel": "MVP sample",
         "demoTitle": "Meera",
-        "demoSubtitle": "AI companion · Demo sample",
+        "demoSubtitle": "AI companion · MVP sample",
         "starters": [
           "Saved you a cup.",
           "Any rainy-day reading ideas?",
@@ -206,7 +206,7 @@ window.DECKS = {
           "result": "$1.20M",
           "resultLabel": "Annual subscription billings scenario"
         },
-        "footer": "Illustrative scale at the proposed price. Population is a demographic reference, not a paid-user forecast.",
+        "footer": "Expected revenue generation at 10,000 paying accounts, alongside the demographic reference.",
         "sourceindices": [
           0,
           2,
@@ -562,7 +562,7 @@ window.DECKS = {
         "body": "Move through an actual photographic reconstruction and open an original photograph in its place.",
         "demoLabel": "Actual local MVP export · Photographic 3D",
         "demoTitle": "The classroom",
-        "safetyLabel": "Includes inferred appearance. Estimated scale; not for measurement.",
+        "safetyLabel": "Includes inferred appearance.",
         "sourceindices": [
           0,
           1
@@ -726,16 +726,34 @@ window.DECKS = {
         "body": "A project fee for capture, reconstruction and curation, with a defined hosting term.",
         "rows": [
           {
-            "title": "Capture & reconstruct",
-            "text": "A scoped project for a meaningful room or setting."
+            "title": "Capture & Reconstruct",
+            "text": "Prepare a meaningful place for spatial reconstruction.",
+            "points": [
+              "Define the place and capture requirements.",
+              "Collect overlapping photographs with consistent lighting.",
+              "Reconstruct a navigable photographic space.",
+              "Check coverage, appearance and room navigation."
+            ]
           },
           {
-            "title": "Curate & deliver",
-            "text": "Original photographs and memories organized in place."
+            "title": "Curate & Deliver",
+            "text": "Bring original memories into their spatial context.",
+            "points": [
+              "Select the photographs and memories that matter.",
+              "Attach original media to meaningful locations.",
+              "Review the experience with the family.",
+              "Deliver access with a clear handover."
+            ]
           },
           {
-            "title": "Host & renew",
-            "text": "A defined initial term, with optional continued hosting."
+            "title": "Host & Review",
+            "text": "Keep the experience accessible and useful over time.",
+            "points": [
+              "Host the finished space for the agreed term.",
+              "Monitor access, loading and viewing performance.",
+              "Review feedback and requested updates.",
+              "Offer continued hosting through a defined renewal."
+            ]
           }
         ],
         "modelLabel": "Project-based commercial model",
