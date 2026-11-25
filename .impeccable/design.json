@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T13:49:14.448108+00:00",
+  "title": "Design System: AVA and MemorX investor presentations",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Near-black",
+        "tonalRamp": [
+          "oklch(15.00% 0.00367 164.66)",
+          "oklch(26.43% 0.00367 164.66)",
+          "oklch(37.86% 0.00367 164.66)",
+          "oklch(49.29% 0.00367 164.66)",
+          "oklch(60.71% 0.00367 164.66)",
+          "oklch(72.14% 0.00367 164.66)",
+          "oklch(83.57% 0.00367 164.66)",
+          "oklch(95.00% 0.00367 164.66)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Ivory",
+        "tonalRamp": [
+          "oklch(15.00% 0.01237 91.52)",
+          "oklch(26.43% 0.01237 91.52)",
+          "oklch(37.86% 0.01237 91.52)",
+          "oklch(49.29% 0.01237 91.52)",
+          "oklch(60.71% 0.01237 91.52)",
+          "oklch(72.14% 0.01237 91.52)",
+          "oklch(83.57% 0.01237 91.52)",
+          "oklch(95.00% 0.01237 91.52)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "AVA forest",
+        "tonalRamp": [
+          "oklch(15.00% 0.03602 156.47)",
+          "oklch(26.43% 0.03602 156.47)",
+          "oklch(37.86% 0.03602 156.47)",
+          "oklch(49.29% 0.03602 156.47)",
+          "oklch(60.71% 0.03602 156.47)",
+          "oklch(72.14% 0.03602 156.47)",
+          "oklch(83.57% 0.03602 156.47)",
+          "oklch(95.00% 0.03602 156.47)"
+        ]
+      },
+      "sage": {
+        "role": "secondary",
+        "displayName": "Sage",
+        "tonalRamp": [
+          "oklch(15.00% 0.02538 149.21)",
+          "oklch(26.43% 0.02538 149.21)",
+          "oklch(37.86% 0.02538 149.21)",
+          "oklch(49.29% 0.02538 149.21)",
+          "oklch(60.71% 0.02538 149.21)",
+          "oklch(72.14% 0.02538 149.21)",
+          "oklch(83.57% 0.02538 149.21)",
+          "oklch(95.00% 0.02538 149.21)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted green-gray",
+        "tonalRamp": [
+          "oklch(15.00% 0.01472 149.05)",
+          "oklch(26.43% 0.01472 149.05)",
+          "oklch(37.86% 0.01472 149.05)",
+          "oklch(49.29% 0.01472 149.05)",
+          "oklch(60.71% 0.01472 149.05)",
+          "oklch(72.14% 0.01472 149.05)",
+          "oklch(83.57% 0.01472 149.05)",
+          "oklch(95.00% 0.01472 149.05)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Rule gray-green",
+        "tonalRamp": [
+          "oklch(15.00% 0.01428 124.59)",
+          "oklch(26.43% 0.01428 124.59)",
+          "oklch(37.86% 0.01428 124.59)",
+          "oklch(49.29% 0.01428 124.59)",
+          "oklch(60.71% 0.01428 124.59)",
+          "oklch(72.14% 0.01428 124.59)",
+          "oklch(83.57% 0.01428 124.59)",
+          "oklch(95.00% 0.01428 124.59)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft green",
+        "tonalRamp": [
+          "oklch(15.00% 0.01479 132.48)",
+          "oklch(26.43% 0.01479 132.48)",
+          "oklch(37.86% 0.01479 132.48)",
+          "oklch(49.29% 0.01479 132.48)",
+          "oklch(60.71% 0.01479 132.48)",
+          "oklch(72.14% 0.01479 132.48)",
+          "oklch(83.57% 0.01479 132.48)",
+          "oklch(95.00% 0.01479 132.48)"
+        ]
+      },
+      "memorx-accent": {
+        "role": "primary",
+        "displayName": "MemorX teal",
+        "tonalRamp": [
+          "oklch(15.00% 0.05601 200.31)",
+          "oklch(26.43% 0.05601 200.31)",
+          "oklch(37.86% 0.05601 200.31)",
+          "oklch(49.29% 0.05601 200.31)",
+          "oklch(60.71% 0.05601 200.31)",
+          "oklch(72.14% 0.05601 200.31)",
+          "oklch(83.57% 0.05601 200.31)",
+          "oklch(95.00% 0.05601 200.31)"
+        ]
+      },
+      "memorx-sage": {
+        "role": "secondary",
+        "displayName": "MemorX orange",
+        "tonalRamp": [
+          "oklch(15.00% 0.16230 42.89)",
+          "oklch(26.43% 0.16230 42.89)",
+          "oklch(37.86% 0.16230 42.89)",
+          "oklch(49.29% 0.16230 42.89)",
+          "oklch(60.71% 0.16230 42.89)",
+          "oklch(72.14% 0.16230 42.89)",
+          "oklch(83.57% 0.16230 42.89)",
+          "oklch(95.00% 0.16230 42.89)"
+        ]
+      },
+      "memorx-muted": {
+        "role": "neutral",
+        "displayName": "MemorX muted green-gray",
+        "tonalRamp": [
+          "oklch(15.00% 0.02657 189.47)",
+          "oklch(26.43% 0.02657 189.47)",
+          "oklch(37.86% 0.02657 189.47)",
+          "oklch(49.29% 0.02657 189.47)",
+          "oklch(60.71% 0.02657 189.47)",
+          "oklch(72.14% 0.02657 189.47)",
+          "oklch(83.57% 0.02657 189.47)",
+          "oklch(95.00% 0.02657 189.47)"
+        ]
+      },
+      "memorx-line": {
+        "role": "neutral",
+        "displayName": "MemorX rule gray-green",
+        "tonalRamp": [
+          "oklch(15.00% 0.01474 169.17)",
+          "oklch(26.43% 0.01474 169.17)",
+          "oklch(37.86% 0.01474 169.17)",
+          "oklch(49.29% 0.01474 169.17)",
+          "oklch(60.71% 0.01474 169.17)",
+          "oklch(72.14% 0.01474 169.17)",
+          "oklch(83.57% 0.01474 169.17)",
+          "oklch(95.00% 0.01474 169.17)"
+        ]
+      },
+      "memorx-soft": {
+        "role": "neutral",
+        "displayName": "MemorX soft green",
+        "tonalRamp": [
+          "oklch(15.00% 0.01084 158.83)",
+          "oklch(26.43% 0.01084 158.83)",
+          "oklch(37.86% 0.01084 158.83)",
+          "oklch(49.29% 0.01084 158.83)",
+          "oklch(60.71% 0.01084 158.83)",
+          "oklch(72.14% 0.01084 158.83)",
+          "oklch(83.57% 0.01084 158.83)",
+          "oklch(95.00% 0.01084 158.83)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Selector display",
+        "purpose": "Main selector heading; mobile overrides documented in DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Deck headline",
+        "purpose": "Shared slide heading base, with component-specific overrides."
+      },
+      "body": {
+        "displayName": "Selector body",
+        "purpose": "Introduction and product descriptions."
+      },
+      "label": {
+        "displayName": "Entry action",
+        "purpose": "Semibold selector action row."
+      },
+      "fine": {
+        "displayName": "Fine text",
+        "purpose": "Supporting selector labels and common deck annotations."
+      }
+    },
+    "shadows": [
+      {
+        "name": "settings-overlay",
+        "value": "0 14px 45px #15171620",
+        "purpose": "Presentation settings menu only."
+      },
+      {
+        "name": "dialog-overlay",
+        "value": "0 20px 70px #0003",
+        "purpose": "Evidence dialog only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Shared easing from the CSS custom property."
+      },
+      {
+        "name": "choice-arrow",
+        "value": "transform .3s var(--ease)",
+        "purpose": "Hover translates selector arrow 6px; disabled by reduced-motion preference."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "800px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "AVA product choice",
+      "kind": "nav",
+      "refersTo": "choice-ava",
+      "description": "Flat whole-region native link. Panel sample omits logo artwork; use supplied logo images in production.",
+      "html": "<a class=\"ds-choice ds-choice-ava\" href=\"?product=ava#1\"><p class=\"ds-description\">An AI companion shaped by shared conversations, with both participants\u2019 consent.</p><span class=\"ds-enter\">Enter AVA<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></span></a>",
+      "css": ".ds-choice-ava{display:flex;flex-direction:column;text-decoration:none;min-height:200px;padding:38px 24px 34px 0;background:var(--paper,#f4f1e8);border-top:1px solid var(--line,#cdd1c7);border-bottom:1px solid var(--line,#cdd1c7);font-family:var(--body,Figtree,Arial,sans-serif);color:var(--accent,#384e40)}.ds-choice-ava .ds-description{font-size:19px;line-height:1.5;color:var(--muted,#5e665f);max-width:34ch;margin:24px 0 32px}.ds-choice-ava .ds-enter{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:18px;font-weight:600;line-height:1.4}.ds-choice-ava svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-choice-ava:hover svg{transform:translateX(6px)}.ds-choice-ava:hover .ds-enter{text-decoration:underline;text-underline-offset:5px}.ds-choice-ava:focus-visible{outline:3px solid var(--accent,#384e40);outline-offset:7px}@media(prefers-reduced-motion:reduce){.ds-choice-ava svg{transition:none}}"
+    },
+    {
+      "name": "MemorX product choice",
+      "kind": "nav",
+      "refersTo": "choice-memorx",
+      "description": "Flat whole-region native link. Panel sample omits logo artwork; use supplied logo images in production.",
+      "html": "<a class=\"ds-choice ds-choice-memorx\" href=\"?product=memorx#1\"><p class=\"ds-description\">Turn photographs into explorable spaces and revisit the memories within them.</p><span class=\"ds-enter\">Enter MemorX<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></span></a>",
+      "css": ".ds-choice-memorx{display:flex;flex-direction:column;text-decoration:none;min-height:200px;padding:38px 24px 34px 0;background:var(--paper,#f4f1e8);border-top:1px solid var(--line,#cdd1c7);border-bottom:1px solid var(--line,#cdd1c7);font-family:var(--body,Figtree,Arial,sans-serif);color:#164d50}.ds-choice-memorx .ds-description{font-size:19px;line-height:1.5;color:var(--muted,#5e665f);max-width:34ch;margin:24px 0 32px}.ds-choice-memorx .ds-enter{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:18px;font-weight:600;line-height:1.4}.ds-choice-memorx svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-choice-memorx:hover svg{transform:translateX(6px)}.ds-choice-memorx:hover .ds-enter{text-decoration:underline;text-underline-offset:5px}.ds-choice-memorx:focus-visible{outline:3px solid #164d50;outline-offset:7px}@media(prefers-reduced-motion:reduce){.ds-choice-memorx svg{transition:none}}"
+    },
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Inherited deck action in the active product accent.",
+      "html": "<button class=\"ds-primary\">Enter the experience</button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:16px;background:var(--accent,#384e40);color:white;border:0;border-radius:40px;padding:16px 22px;font-family:var(--body,Figtree,Arial,sans-serif);font-size:16px;font-weight:600;cursor:pointer}.ds-primary:hover{filter:brightness(1.12)}.ds-primary:focus-visible{outline:3px solid var(--accent,#384e40);outline-offset:5px}.ds-primary:disabled{opacity:.32;cursor:default}@media(max-width:800px){.ds-primary{font-size:13px;padding:13px 18px}}"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Inherited underlined deck action.",
+      "html": "<button class=\"ds-text\">View the beta breakdown</button>",
+      "css": ".ds-text{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--ink,#151716);border:0;border-bottom:1px solid currentColor;padding:7px 0;font-family:var(--body,Figtree,Arial,sans-serif);font-size:16px;font-weight:600;cursor:pointer}.ds-text:focus-visible{outline:3px solid var(--accent,#384e40);outline-offset:5px}"
+    },
+    {
+      "name": "Working MVP status",
+      "kind": "chip",
+      "refersTo": "pill",
+      "description": "Informational deck status, not a button.",
+      "html": "<span class=\"ds-pill\"><i></i>Working MVP</span>",
+      "css": ".ds-pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line,#cdd1c7);padding:8px 12px;border-radius:30px;color:var(--ink,#151716);font-family:var(--body,Figtree,Arial,sans-serif);font-size:14px}.ds-pill i{width:7px;height:7px;background:var(--accent,#384e40);border-radius:50%}"
+    },
+    {
+      "name": "Scenario range",
+      "kind": "input",
+      "description": "Native range control from the deck revenue scenario.",
+      "html": "<input class=\"ds-range\" type=\"range\" min=\"10\" max=\"1000\" step=\"10\" value=\"100\" aria-label=\"Illustrative paying accounts\">",
+      "css": ".ds-range{width:100%;accent-color:var(--accent,#384e40);margin:20px 0}.ds-range:focus-visible{outline:3px solid var(--accent,#384e40);outline-offset:5px}"
+    },
+    {
+      "name": "Presentation settings menu",
+      "kind": "nav",
+      "description": "Inherited overlay menu; active state identifies the current product.",
+      "html": "<nav class=\"ds-menu\" aria-label=\"Presentation settings\"><a href=\"./\">Choose presentation</a><a class=\"ds-current\" href=\"?product=ava\" aria-current=\"page\">AVA</a><a href=\"?product=memorx\">MemorX</a><button>Evidence</button><button>Fullscreen</button></nav>",
+      "css": ".ds-menu{display:flex;flex-direction:column;gap:3px;min-width:210px;padding:10px;background:var(--paper,#f4f1e8);color:var(--ink,#151716);border:1px solid var(--line,#cdd1c7);border-radius:16px;box-shadow:0 14px 45px #15171620;font-family:var(--body,Figtree,Arial,sans-serif)}.ds-menu a,.ds-menu button{text-align:left;text-decoration:none;padding:12px 14px;border:0;background:transparent;color:inherit;border-radius:9px;font-family:inherit;font-size:16px;line-height:1.3;cursor:pointer}.ds-menu .ds-current{background:var(--accent,#384e40);color:white}.ds-menu button:hover,.ds-menu a:not(.ds-current):hover{background:var(--soft,#e3e9df)}.ds-menu a:focus-visible{outline:3px solid var(--accent,#384e40);outline-offset:5px}.ds-menu button:focus-visible{outline:3px solid var(--accent,#384e40);outline-offset:5px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Incumbent editorial investor presentations",
+    "overview": "This records the shipped identity, rather than proposing a new one. Warm ivory, near-black ink, spacious serif headings and clear sans-serif reading text establish the shared presentation frame. AVA forest and MemorX teal distinguish product actions without competing with the supplied logos.\n\nThe selector extends the deck's editorial rules into flat, equal navigation surfaces. The presentations also use rounded controls, contained media and occasional soft shadows; those treatments remain specific to their components. This record covers the selector and the shared deck vocabulary it inherits, not every slide-specific composition. Source authority is `public/styles.css`, `public/index.html` and `public/app.js`; desktop, mobile and 1280px review captures confirm the selector's rendered form. Product commitments remain in `PRODUCT.md`, and entry-state behavior remains in `.impeccable/surfaces/product-selector.md`.",
+    "keyCharacteristics": [
+      "Shared ivory canvas and ink typography.",
+      "Product-specific forest and teal actions.",
+      "Supplied logos, preserved as image assets.",
+      "Serif hierarchy paired with readable sans-serif text.",
+      "Flat editorial rules for navigation; restrained depth for deck media and overlays."
+    ],
+    "rules": [
+      {
+        "name": "The Product Accent Rule",
+        "body": "Match action color to the product context. MemorX's selector link changes its local accent while the shared selector canvas and descriptive text retain the default neutral palette.",
+        "section": "colors"
+      },
+      {
+        "name": "The Logo Integrity Rule",
+        "body": "Use the supplied AVA and MemorX image assets with contained fitting and their original proportions; do not rebuild their lettering as live text.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ruled Navigation Rule",
+        "body": "Preserve the selector's flat shared canvas and thin dividers; apply the deck's overlay depth only to actual overlays.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** retain the supplied fonts and original logo assets.",
+      "**Do** match product actions to forest or teal through the Product Accent Rule.",
+      "**Do** preserve equal structural prominence for the two selector links.",
+      "**Do** keep native link semantics, visible keyboard focus and reduced-motion behavior.",
+      "**Do** scope soft corners and depth to the deck components that use them."
+    ],
+    "donts": [
+      "**Don't** turn selector options into raised, rounded cards.",
+      "**Don't** recolor or retype the supplied logos.",
+      "**Don't** nest buttons inside the product links.",
+      "**Don't** use deck-only uppercase financing labels as a new heading tier on future surfaces."
+    ]
+  }
+}

@@ -1,6 +1,14 @@
 (() => {
   'use strict';
-  const key = new URLSearchParams(location.search).get('product') === 'memorx' ? 'memorx' : 'ava';
+  const requestedProduct = new URLSearchParams(location.search).get('product');
+  const key = ['ava', 'memorx'].includes(requestedProduct) ? requestedProduct : null;
+  if (!key) {
+    document.title = 'AVA & MemorX | Investor presentations';
+    return;
+  }
+  document.body.classList.remove('product-chooser');
+  document.querySelector('.skip').textContent = 'Skip to presentation';
+  document.querySelector('#stage').setAttribute('aria-label', 'Investor presentation');
   const deck = window.DECKS[key], media = window.DECK_MEDIA[key], round = window.FUNDING_ROUND, isAva = key === 'ava';
   const el = selector => document.querySelector(selector);
   const safe = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
@@ -61,8 +69,8 @@
   document.title = `${deck.brandname} | Investor presentation`;
   el('#brand-logo').src = `assets/${key}-logo.png`;
   el('#brand-logo').alt = deck.brandname;
-  el('.brand').href = `?product=${key}`;
-  el('.brand').setAttribute('aria-label', `${deck.brandname} presentation`);
+  el('.brand').href = './';
+  el('.brand').setAttribute('aria-label', 'Choose presentation');
   document.querySelector(`[data-product="${key}"]`).classList.add('active');
   document.querySelector(`[data-product="${key}"]`).setAttribute('aria-current', 'page');
   el('#stage').innerHTML = deck.slides.map((slide,index) => `<section class="slide ${safe(slide.type)}" id="${safe(slide.id || `${key}-${slide.type}`)}" data-slide="${index}" data-print-brand="${safe(deck.brandname)} · ${safe(deck.tagline)}" data-print-page="${index + 1} / ${deck.slides.length}" aria-label="Slide ${index + 1}: ${safe(slide.title)}">${templates[slide.type](slide)}</section>`).join('');

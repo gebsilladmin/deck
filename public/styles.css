@@ -289,3 +289,34 @@ dialog{border:0;background:var(--paper);color:var(--ink);padding:32px;max-width:
   .product-allocation{padding-bottom:9px}.product-allocation>span{font-size:15px}.product-allocation>strong{font-size:30px}.round-grid .ask-caption{font-size:14px;margin:9px 0 5px}
   .round-grid .allocation-row{padding:8px 0 10px}.round-grid .allocation-label{font-size:14px;margin-bottom:7px}.round-grid .beta-title{font-size:15px;margin-top:14px}.round-grid .beta-row{font-size:14px;padding:5px 0}
 }
+
+/* Product selection inherits the decks' paper, type and product colours. */
+body.product-chooser{overflow:auto}
+.product-chooser>.deck-header,.product-chooser>.deck-footer,.product-chooser>#sources{display:none}
+.product-chooser #stage{height:auto;min-height:100dvh}
+.chooser-shell{min-height:100dvh;padding:32px 6.5vw 24px;display:flex;flex-direction:column;max-width:1700px;margin:0 auto}
+.chooser-header{display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:17px;line-height:1.4}
+.chooser-header span:last-child{color:var(--muted);font-size:14px}
+.chooser-intro{margin:clamp(52px,8vh,90px) 0 48px}
+.chooser-intro h1{font-family:var(--display);font-size:clamp(42px,4.5vw,68px);font-weight:500;letter-spacing:-.03em;line-height:1.1;margin:0;text-wrap:balance}
+.chooser-intro p{font-size:19px;line-height:1.5;color:var(--muted);margin:18px 0 0;max-width:55ch}
+.product-choices{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.product-choice{min-width:0;display:flex;flex-direction:column;padding:38px 4.5vw 34px 0;text-decoration:none;min-height:330px;transition:background-color .25s var(--ease)}
+.product-choice h2{margin:0;font-size:32px;line-height:1}
+.product-choice h2 img{display:block;object-fit:contain;object-position:left center;width:240px;max-width:100%;height:90px}
+.choice-memorx{--accent:#164d50;padding-left:4.5vw;padding-right:0;border-left:1px solid var(--line)}
+.choice-description{font-size:19px;line-height:1.5;color:var(--muted);max-width:34ch;margin:24px 0 32px}
+.choice-enter{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:24px;color:var(--accent);font-size:18px;font-weight:600;line-height:1.4}
+.choice-enter svg{width:26px;height:26px;flex:none;transition:transform .3s var(--ease)}
+.product-choice:hover .choice-enter svg{transform:translateX(6px)}
+.product-choice:hover .choice-enter{text-decoration:underline;text-underline-offset:5px}
+.product-choice:focus-visible{outline-offset:7px}
+.chooser-footer{margin-top:auto;padding-top:38px;color:var(--muted);font-size:14px;line-height:1.5}
+@media screen and (max-width:800px){
+  .chooser-shell{padding:24px;min-height:100dvh}.chooser-header{font-size:16px;gap:12px}.chooser-header span:last-child{font-size:12px}
+  .chooser-intro{margin:42px 0 32px}.chooser-intro h1{font-size:42px;max-width:12ch}.chooser-intro p{font-size:17px;max-width:32ch;margin-top:16px}
+  .product-choices{grid-template-columns:1fr}.product-choice,.choice-memorx{min-height:0;padding:24px 0;border-left:0}.choice-memorx{border-top:1px solid var(--line)}
+  .product-choice h2 img{width:185px;height:61px}.choice-description{font-size:16px;max-width:35ch;margin:17px 0 22px}.choice-enter{font-size:17px}.choice-enter svg{width:24px;height:24px}
+  .chooser-footer{padding-top:28px;font-size:13px}
+}
+@media print{.product-chooser #stage{min-height:0}.chooser-shell{min-height:0;padding:40px 65px}.chooser-intro{margin:48px 0 38px}.product-choice{min-height:300px}.chooser-footer{margin-top:35px}}

@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#F4F1E8">
   <title>AVA &amp; MemorX | Investor presentations</title>
-  <link rel="stylesheet" href="styles.css?v=20261125-round">
+  <link rel="stylesheet" href="styles.css?v=20261125-chooser">
 </head>
-<body>
-  <a class="skip" href="#stage">Skip to presentation</a>
+<body class="product-chooser">
+  <a class="skip" href="#stage">Skip to product choices</a>
   <header class="deck-header">
-    <a class="brand" href="?product=ava" aria-label="AVA presentation"><img id="brand-logo" src="assets/ava-logo.png" alt="AVA"></a>
+    <a class="brand" href="./" aria-label="Choose presentation"><img id="brand-logo" src="assets/ava-logo.png" alt="AVA"></a>
     <div class="settings">
       <button id="settings-toggle" class="settings-toggle" aria-label="Presentation settings" aria-expanded="false" aria-controls="settings-menu" title="Presentation settings">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.2 3-.6 2.1-1.9 1.1-2.1-.5-2.8 4.7 1.6 1.6v2.2l-1.6 1.6 2.8 4.7 2.1-.5 1.9 1.1.6 2.1h5.6l.6-2.1 1.9-1.1 2.1.5 2.8-4.7-1.6-1.6V12l1.6-1.6-2.8-4.7-2.1.5-1.9-1.1-.6-2.1Z" transform="translate(1 -1) scale(.92)"/><circle cx="12" cy="12" r="3.2"/></svg>
       </button>
       <nav id="settings-menu" class="settings-menu" aria-label="Presentation settings" hidden>
+        <a href="./">Choose presentation</a>
         <a data-product="ava" href="?product=ava">AVA</a>
         <a data-product="memorx" href="?product=memorx">MemorX</a>
         <button id="sources-toggle">Evidence</button>
@@ -23,7 +24,28 @@
       </nav>
     </div>
   </header>
-  <main id="stage" tabindex="-1" aria-label="Investor presentation"></main>
+  <main id="stage" tabindex="-1" aria-label="Choose an investor presentation">
+    <div class="chooser-shell">
+      <header class="chooser-header"><span>Gebsill Labs</span><span>Investor presentations</span></header>
+      <div class="chooser-intro">
+        <h1>Choose a presentation.</h1>
+        <p>Explore the product, the working MVP and the funding plan.</p>
+      </div>
+      <nav class="product-choices" aria-label="Product presentations">
+        <a class="product-choice choice-ava" href="?product=ava#1" aria-labelledby="ava-choice-title" aria-describedby="ava-choice-description">
+          <h2 id="ava-choice-title"><img src="assets/ava-logo.png" alt="AVA" width="240" height="90"></h2>
+          <p class="choice-description" id="ava-choice-description">An AI companion shaped by shared conversations, with both participants’ consent.</p>
+          <span class="choice-enter">Enter AVA<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>
+        </a>
+        <a class="product-choice choice-memorx" href="?product=memorx#1" aria-labelledby="memorx-choice-title" aria-describedby="memorx-choice-description">
+          <h2 id="memorx-choice-title"><img src="assets/memorx-logo.png" alt="MemorX" width="240" height="90"></h2>
+          <p class="choice-description" id="memorx-choice-description">Turn photographs into explorable spaces and revisit the memories within them.</p>
+          <span class="choice-enter">Enter MemorX<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>
+        </a>
+      </nav>
+      <footer class="chooser-footer">Gebsill International Private Limited</footer>
+    </div>
+  </main>
   <dialog id="sources" aria-labelledby="evidence-title">
     <div class="dialog-top"><h2 id="evidence-title">Evidence</h2><button id="sources-close" aria-label="Close evidence">Close</button></div>
     <div id="sources-list"></div>
@@ -36,6 +58,6 @@
       <button id="next" aria-label="Next slide"><span>Next</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button>
     </div>
   </footer>
-  <script src="content.js?v=20261125-round"></script><script src="config.js"></script><script src="app.js?v=20261125-round"></script>
+  <script src="content.js?v=20261125-round"></script><script src="config.js"></script><script src="app.js?v=20261125-chooser"></script>
 </body>
 </html>

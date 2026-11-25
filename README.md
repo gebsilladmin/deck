@@ -4,10 +4,13 @@ Two separate, interactive six-minute presentations by Gebsill International Priv
 
 ## Open
 
+* Product selector: `/`
 * AVA: `/?product=ava`
 * MemorX: `/?product=memorx`
 
-Use the on-screen controls or left/right arrow keys to navigate. The settings menu selects the product, evidence links and fullscreen mode. The AVA conversation introduces the experience with an MVP sample. The MemorX room loads a photographic 3D export and can be explored in the browser. Video playback is user initiated.
+The home page presents AVA and MemorX as two choices. Each opens its presentation on slide 1. Missing, empty or unknown product queries show the selector. Direct product and slide links remain supported. The brand link and the settings menu's “Choose presentation” link return to the selector.
+
+Use the on-screen controls or left/right arrow keys to navigate. The settings menu selects the product, evidence links and fullscreen mode. The AVA conversation introduces the experience with an MVP sample. The MemorX room loads a photographic 3D export and can be explored in the browser. Video playback is user initiated. The selector returns before slides are rendered, so videos and 3D assets are not requested until a presentation is selected.
 
 ## Funding terms
 
