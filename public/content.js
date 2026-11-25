@@ -1,3 +1,13 @@
+window.FUNDING_ROUND = {
+  "ask": 95500,
+  "equityPercent": 20,
+  "preMoney": 382000,
+  "postMoney": 477500,
+  "futureTarget": 10000000,
+  "targetNote": "Aspirational future valuation target, not the valuation of this round.",
+  "asof": "25 November 2026"
+};
+
 window.DECKS = {
   "ava": {
     "brandname": "AVA",
@@ -7,7 +17,7 @@ window.DECKS = {
     "company": "Gebsill International Private Limited",
     "contact": "ceo@gebsill.com",
     "status": "Working MVP",
-    "asof": "18 November 2026",
+    "asof": "25 November 2026",
     "team": [
       {
         "name": "Shanjo",
@@ -385,7 +395,7 @@ window.DECKS = {
       {
         "type": "ask",
         "title": "Fund the next proof.",
-        "body": "US$37,100 to turn the working MVP into a validated, supportable product.",
+        "body": "AVA allocation: US$37,100 within the combined US$95,500 pre-seed round.",
         "allocations": [
           {
             "label": "Initial hosted beta",
@@ -467,7 +477,7 @@ window.DECKS = {
     "company": "Gebsill International Private Limited",
     "contact": "ceo@gebsill.com",
     "status": "Working local MVP",
-    "asof": "18 November 2026",
+    "asof": "25 November 2026",
     "team": [
       {
         "name": "Shanjo",
@@ -848,7 +858,7 @@ window.DECKS = {
       {
         "type": "ask",
         "title": "Fund the walking beta. Build the business.",
-        "body": "US$58,400 total, beginning with a US$24,240 solid product beta.",
+        "body": "MemorX allocation: US$58,400 within the combined US$95,500 pre-seed round.",
         "allocations": [
           {
             "label": "Walking product beta",

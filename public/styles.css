@@ -252,3 +252,40 @@ dialog{border:0;background:var(--paper);color:var(--ink);padding:32px;max-width:
 }
 /* Place the supporting callout over the empty chat backdrop. */
 .ava .hero .float-message.two{top:20%;bottom:auto}
+
+/* One proposed company round, with product budgets kept distinct. */
+.round-grid{grid-template-columns:.95fr 1.05fr;align-items:center}
+.round-label{display:block;font-size:14px;color:var(--muted);margin-bottom:16px;line-height:1.4}
+.round-summary .ask-amount{font-size:clamp(68px,7vw,104px)}
+.round-summary .ask-currency{margin:14px 0 20px}
+.round-equity{display:flex;align-items:center;gap:18px;margin:0 0 23px;max-width:34ch}
+.round-equity strong{font-family:var(--display);font-size:49px;font-weight:500;line-height:1;color:var(--accent);white-space:nowrap}
+.round-equity span{font-size:16px;line-height:1.4;color:var(--muted);max-width:17ch}
+.round-valuations{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.round-valuations dt{font-size:14px;color:var(--muted);line-height:1.4;margin-bottom:7px}
+.round-valuations dd{margin:0;font-family:var(--display);font-size:29px;font-variant-numeric:tabular-nums;color:var(--accent);white-space:nowrap}
+.valuation-target{padding-top:20px}
+.valuation-target>span{display:block;font-size:14px;color:var(--muted)}
+.valuation-target>strong{display:block;font-family:var(--display);font-weight:500;font-size:33px;line-height:1.2;margin:6px 0;color:var(--accent);font-variant-numeric:tabular-nums}
+.valuation-target p{font-size:14px;line-height:1.45;color:var(--muted);max-width:38ch;margin:0}
+.product-allocation{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.product-allocation>span{font-size:16px;font-weight:500}
+.product-allocation>strong{font-family:var(--display);font-size:35px;font-weight:500;white-space:nowrap;color:var(--accent)}
+.round-grid .ask-caption{font-size:16px;max-width:44ch;margin:12px 0 8px}
+.ask.active .round-valuations,.ask.active .valuation-target{animation:fact-arrive .8s var(--ease) both}
+@media screen and (max-height:800px) and (min-width:801px){
+  .round-summary .ask-amount{font-size:76px}.round-label{margin-bottom:12px}.round-summary .ask-currency{margin:12px 0 16px}
+  .round-equity{margin-bottom:18px}.round-equity strong{font-size:42px}.round-valuations{padding:16px 0}.round-valuations dd{font-size:26px}
+  .valuation-target{padding-top:16px}.valuation-target>strong{font-size:29px}.product-allocation>strong{font-size:31px}.round-grid .ask-caption{font-size:15px}
+}
+@media screen and (max-width:800px){
+  .round-grid{gap:34px}.round-label{font-size:14px}.round-summary .ask-amount{font-size:76px}.round-equity strong{font-size:47px}.round-valuations dd{font-size:28px}
+  .valuation-target>strong{font-size:31px}.product-allocation>strong{font-size:32px}.round-grid .ask-caption{font-size:16px}.round-grid .funding-detail{padding-bottom:12px}
+}
+@media print{
+  .round-grid{grid-template-columns:.95fr 1.05fr;gap:48px}.round-summary .ask-amount{font-size:78px}.round-label{font-size:13px;margin-bottom:12px}
+  .round-summary .ask-currency{font-size:13px;margin:12px 0 16px}.round-equity{margin-bottom:18px}.round-equity strong{font-size:42px}.round-equity span{font-size:15px}
+  .round-valuations{padding:16px 0}.round-valuations dt{font-size:13px}.round-valuations dd{font-size:27px}.valuation-target{padding-top:16px}.valuation-target>strong{font-size:29px}.valuation-target p{font-size:13px}
+  .product-allocation{padding-bottom:9px}.product-allocation>span{font-size:15px}.product-allocation>strong{font-size:30px}.round-grid .ask-caption{font-size:14px;margin:9px 0 5px}
+  .round-grid .allocation-row{padding:8px 0 10px}.round-grid .allocation-label{font-size:14px;margin-bottom:7px}.round-grid .beta-title{font-size:15px;margin-top:14px}.round-grid .beta-row{font-size:14px;padding:5px 0}
+}

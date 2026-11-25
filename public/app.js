@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const key = new URLSearchParams(location.search).get('product') === 'memorx' ? 'memorx' : 'ava';
-  const deck = window.DECKS[key], media = window.DECK_MEDIA[key], isAva = key === 'ava';
+  const deck = window.DECKS[key], media = window.DECK_MEDIA[key], round = window.FUNDING_ROUND, isAva = key === 'ava';
   const el = selector => document.querySelector(selector);
   const safe = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
   const money = (value, cents = false) => '$' + Number(value).toLocaleString('en-US', {minimumFractionDigits:cents ? 2 : 0, maximumFractionDigits:cents ? 2 : 0});
@@ -35,7 +35,25 @@
       return `${intro(s)}<div class="projection-key"><span class="projection-unit">${modelPrice} ${safe(s.modelUnit)}${s.modelDirectCost !== undefined ? ` · ${directCost} direct cost per unit` : ''}</span><span><i class="legend-revenue"></i>Revenue</span>${hasCosts ? '<span><i class="legend-cost"></i>Direct cost</span>' : ''}</div><div class="projection-chart${hasContribution ? '' : ' revenue-only'}">${scenarios.map(item => `<div class="projection-case"><div class="case-label"><h3>${safe(item.label)}</h3><span>${safe(item.volume)}</span></div><div class="case-bars"><div class="case-bar revenue-bar"><div style="--width:${Number(item.revenue) / maximum * 100}%"></div><strong>${money(item.revenue)}</strong></div>${item.cost !== undefined ? `<div class="case-bar cost-bar"><div style="--width:${Number(item.cost) / maximum * 100}%"></div><strong>${money(item.cost)}</strong></div>` : ''}</div>${item.contribution !== undefined ? `<div class="case-contribution"><strong>${money(item.contribution)}</strong><span>Contribution</span></div>` : ''}</div>`).join('')}</div>${s.projectionNote ? `<p class="projection-note">${safe(s.projectionNote)}</p>` : ''}${source(s)}`;
     },
     roadmap: s => `${intro(s)}<div class="roadmap">${(s.rows || []).map((row,index) => `<div class="roadmap-row${isAva ? '' : ' roadmap-simple'}">${isAva ? `<div class="period">${safe(row.title)}</div>` : ''}<h3>${safe(isAva ? row.heading || ['Build for the outside world.','Test the full trust flow.','Observe real use.'][index] || row.title : row.title)}</h3><p>${safe(row.text)}</p></div>`).join('')}</div>${isAva && s.footer ? `<p class="roadmap-footer">${safe(s.footer)}</p>` : ''}${source(s)}`,
-    ask: s => `${intro(s)}<div class="ask-grid"><div><div class="ask-amount" data-count="${deck.ask}">${money(deck.ask)}</div><span class="ask-currency">US DOLLARS · ${isAva ? 'AVA' : 'MEMORX'} ONLY</span><p class="ask-caption">${safe(s.caption || (isAva ? 'A hosted beta first. Productization guided by what users actually do.' : 'A walking beta first. A complete product experience next.'))}</p><div class="funding-equation"><div><strong>${money(s.betaAsk)}</strong><span>Beta launch</span></div><span class="equation-plus" aria-hidden="true">+</span><div><strong>${money(s.nextPhase)}</strong><span>Next product phase</span></div></div></div><div class="funding-detail"><div class="allocation">${(s.allocations || []).map(item => `<div class="allocation-row"><div class="allocation-label"><span>${safe(item.label)}</span><strong>${money(item.value)}</strong></div><div class="bar" aria-hidden="true"><span style="--width:${item.value / deck.ask * 100}%"></span></div></div>`).join('')}</div>${s.betaBreakdown?.length ? `${isAva ? `<button class="text-button" id="beta-toggle" aria-expanded="false" aria-controls="beta-breakdown">View the ${money(s.betaAsk)} beta breakdown</button>` : `<h3 class="beta-title">${money(s.betaAsk)} beta breakdown</h3>`}<div class="beta-breakdown${isAva ? '' : ' open'}" id="beta-breakdown">${betaRows(s)}</div>` : ''}</div></div>`,
+    ask: s => `${intro(s)}<div class="ask-grid round-grid">
+      <div class="round-summary">
+        <span class="round-label">AVA + MemorX · proposed pre-seed round</span>
+        <div class="ask-amount" data-count="${round.ask}">${money(round.ask)}</div>
+        <span class="ask-currency">COMBINED ROUND · US DOLLARS</span>
+        <p class="round-equity"><strong>${safe(round.equityPercent)}%</strong><span>total equity offered in this round</span></p>
+        <dl class="round-valuations">
+          <div><dt>Implied pre-money</dt><dd>${money(round.preMoney)}</dd></div>
+          <div><dt>Implied post-money</dt><dd>${money(round.postMoney)}</dd></div>
+        </dl>
+        <div class="valuation-target"><span>Aspirational future valuation</span><strong>${money(round.futureTarget)}</strong><p>${safe(round.targetNote)}</p></div>
+      </div>
+      <div class="funding-detail">
+        <div class="product-allocation"><span>${safe(deck.brandname)} product allocation</span><strong>${money(deck.ask)}</strong></div>
+        <p class="ask-caption">${safe(s.caption || (isAva ? 'A hosted beta first. Productization guided by what users actually do.' : 'A walking beta first. A complete product experience next.'))}</p>
+        <div class="allocation">${(s.allocations || []).map(item => `<div class="allocation-row"><div class="allocation-label"><span>${safe(item.label)}</span><strong>${money(item.value)}</strong></div><div class="bar" aria-hidden="true"><span style="--width:${item.value / deck.ask * 100}%"></span></div></div>`).join('')}</div>
+        ${s.betaBreakdown?.length ? `${isAva ? `<button class="text-button" id="beta-toggle" aria-expanded="false" aria-controls="beta-breakdown">View the ${money(s.betaAsk)} beta breakdown</button>` : `<h3 class="beta-title">${money(s.betaAsk)} beta breakdown</h3>`}<div class="beta-breakdown${isAva ? '' : ' open'}" id="beta-breakdown">${betaRows(s)}</div>` : ''}
+      </div>
+    </div>`,
     team: s => `<div class="two-col"><div><img class="wordmark" src="assets/${key}-logo.png" alt="${safe(deck.brandname)}"><h2 class="close-line">${safe(s.title)}</h2><p class="lead">${safe(s.body)}</p>${s.cta ? `<p class="close-ask">${safe(s.cta)}</p>` : ''}<div class="close-contact"><a class="primary" href="mailto:${safe(deck.contact)}">${safe(deck.contact)} ${icon('arrow')}</a><a href="https://www.gebsill.com" target="_blank" rel="noopener">gebsill.com</a></div></div><div class="team-list">${deck.team.map(person => `<div class="team-member"><strong>${safe(person.name)}</strong><span>${safe(person.role)}</span></div>`).join('')}</div></div>`
   };
 
@@ -92,7 +110,7 @@
     history.replaceState(null, '', `?product=${key}#${index + 1}`);
     document.querySelectorAll('video').forEach(video => video.pause());
     if (window.MemorXRoom) slide.type === 'experience' ? window.MemorXRoom.resume() : window.MemorXRoom.pause();
-    if (slide.type === 'ask') countMoney(el('[data-count]'), deck.ask);
+    if (slide.type === 'ask') { const amount = el('[data-count]'); countMoney(amount, Number(amount.dataset.count)); }
   }
   document.addEventListener('click', event => { const button = event.target.closest('[data-go]'); if (button) go(Number(button.dataset.go)); });
   el('#previous').onclick = () => go(current - 1);
@@ -172,6 +190,6 @@
   }
   window.Deck = {go,key,deck,get current() { return current; }};
   window.addEventListener('hashchange', () => go((Number(location.hash.slice(1)) || 1) - 1));
-  window.addEventListener('beforeprint', () => { cancelAnimationFrame(counterFrame); if (el('[data-count]')) el('[data-count]').textContent = money(deck.ask); });
+  window.addEventListener('beforeprint', () => { cancelAnimationFrame(counterFrame); if (el('[data-count]')) el('[data-count]').textContent = money(el('[data-count]').dataset.count); });
   go((Number(location.hash.slice(1)) || 1) - 1);
 })();

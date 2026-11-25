@@ -7,7 +7,15 @@ Two separate, interactive six-minute presentations by Gebsill International Priv
 * AVA: `/?product=ava`
 * MemorX: `/?product=memorx`
 
-Use the on-screen controls or left/right arrow keys to navigate. The settings menu selects the product, evidence links and fullscreen mode. The AVA conversation introduces the experience with a demo sample. The MemorX room loads a photographic 3D export and can be explored in the browser. Video playback is user initiated.
+Use the on-screen controls or left/right arrow keys to navigate. The settings menu selects the product, evidence links and fullscreen mode. The AVA conversation introduces the experience with an MVP sample. The MemorX room loads a photographic 3D export and can be explored in the browser. Video playback is user initiated.
+
+## Funding terms
+
+Founder-approved terms, 25 November 2026: the proposed combined AVA + MemorX pre-seed round is US$95,500 for 20% total round equity. This implies US$382,000 pre-money and US$477,500 post-money. The 20% applies once to the combined round.
+
+AVA's US$37,100 and MemorX's US$58,400 are product allocations within that round. Their included beta budgets remain US$6,160 and US$24,240 respectively. `window.FUNDING_ROUND` contains the shared round terms; each product's `ask` retains its allocation amount for budget calculations.
+
+US$10 million is an aspirational future valuation target. It is not the valuation of this round or an agreed future investment valuation.
 
 ## Local preview
 
